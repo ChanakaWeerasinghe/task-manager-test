@@ -1,8 +1,7 @@
 # Task Manager App
 
-##Description:
+## Description:
 Create a task manager app that allows users to add, update, and delete tasks. The app should have the following features:
-
 
 ## Getting Started
 

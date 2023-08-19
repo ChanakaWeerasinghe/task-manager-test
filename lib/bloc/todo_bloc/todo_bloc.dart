@@ -34,7 +34,13 @@ class TodoBloc extends Bloc<TodoEvent, TodoState> {
   }
 
   _update(UpdateTask event) {
-    emit(UpdateSuccess());
+    try {
+      DatabaseHelper.instance.updateTask(event.task);
+      emit(UpdateSuccess());
+    } catch (e) {
+      emit(UpdateFail());
+      print(e);
+    }
   }
 
   _delete(DeleteTask event) {

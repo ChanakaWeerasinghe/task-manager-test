@@ -178,7 +178,7 @@ class _AddTaskScreenState extends State<AddTaskScreen> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
-                  Image.network(imagePath, height: 150),
+                  Image.network(imagePath, height: 120),
                   Form(
                     key: _formKey,
                     child: Column(
@@ -202,7 +202,7 @@ class _AddTaskScreenState extends State<AddTaskScreen> {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsets.symmetric(vertical: 20.0),
+                          padding: EdgeInsets.symmetric(vertical: 15.0),
                           child: TextFormField(
                             style: TextStyle(fontSize: 18.0),
                             decoration: InputDecoration(
@@ -220,7 +220,7 @@ class _AddTaskScreenState extends State<AddTaskScreen> {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsets.symmetric(vertical: 20.0),
+                          padding: EdgeInsets.symmetric(vertical: 10.0),
                           child: TextFormField(
                             readOnly: true,
                             controller: _dateController,
@@ -236,7 +236,7 @@ class _AddTaskScreenState extends State<AddTaskScreen> {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsets.symmetric(vertical: 20.0),
+                          padding: EdgeInsets.symmetric(vertical: 10.0),
                           child: TextFormField(
                             readOnly: true,
                             controller: _dateCreatedController,
@@ -252,7 +252,7 @@ class _AddTaskScreenState extends State<AddTaskScreen> {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsets.symmetric(vertical: 20.0),
+                          padding: EdgeInsets.symmetric(vertical: 10.0),
                           child: DropdownButtonFormField(
                             isDense: true,
                             icon: Icon(Icons.arrow_drop_down_circle),

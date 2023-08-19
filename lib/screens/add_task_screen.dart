@@ -135,7 +135,7 @@ class _AddTaskScreenState extends State<AddTaskScreen> {
           Toast.show("Task Not Updated !", context,
               duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM);
         } else if (state is DeleteSuccess) {
-          Navigator.pop(context);
+          Navigator.of(context).push(CustomRoute(HomeScreen()));
           widget.updateTaskList();
           Toast.show("Task Deleted", context,
               duration: Toast.LENGTH_LONG, gravity: Toast.BOTTOM);
